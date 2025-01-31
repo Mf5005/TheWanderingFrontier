@@ -1,0 +1,499 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  /* Body Styles */
+  body {
+  font-family: 'Georgia', serif;
+  background: #4b6173; /* Base background color */
+  color: #ffffff; /* Text color */
+  line-height: 1.6;
+}
+
+  
+  /* Container */
+  .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+  /* Header Styles */
+  header {
+  background: #615f5b; /* Header background */
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid #8b5a2b; /* Accent border */
+}
+
+  header h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+  /* Navigation Styles */
+  nav ul {
+  list-style: none;
+}
+
+  nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+  nav a {
+  color: #ffffff; /* White text for links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+  
+  nav a:hover {
+  color: #8b5a2b; /* Accent color on hover */
+}
+
+  
+  /* Hero Section */
+  .hero {
+  background: url('mountain-hero.jpg') no-repeat center center/cover;
+  padding: 100px 0;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+
+}
+
+  .hero h2, .hero p {
+  max-width: 95%; /* Limit the width of text to 90% of the container */
+  margin: 0px auto; /* Center the text */
+}
+
+  
+  .hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for depth */
+  z-index: 1;
+}
+
+  
+  #millpic {
+  background: rgba(0, 0, 0, 0.0);
+  position: relative; /* Make it relative to the .hero section */
+  z-index: 2; /* Set z-index higher than .hero:before */
+  max-width: 100%;
+  /*height: 500px; */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+
+}
+
+  .hero h2 {
+  font-size: 2.5em;
+  z-index: 2;
+  position: relative;
+  margin: 20px 0;
+  padding-left: 5%;
+}
+  
+  .hero p {
+  font-size: 1.6em;
+  z-index: 2;
+  position: relative;
+}
+
+  /* Locations Section */
+  .locations {
+  padding: 60px 0;
+  text-align: center;
+}
+
+  
+  .locations h2 {
+  margin: 40px 0;
+  font-size: 3.2em;
+  color: #FFA500; /* Orange */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+  position: relative; /* Required for positioning the line */
+}
+  
+  
+  /* Individual Location Styles */
+  .location {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 40px 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+  .location:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+  .location img {
+  max-width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+  .location img:hover {
+  transform: scale(1.05);
+}
+
+  .location h3 {
+  margin: 20px 0;
+  font-size: 2.5em;
+  color: #8b5a2b; /* Heading color */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+  .location p {
+  font-size: 1.4em;
+  margin-top: 15px;
+  color: #333333; /* Darker gray for improved readability */
+  line-height: 1.6; /* Slightly increased line height for better readability */
+}
+
+  /* Hike Details Section */
+  .hike-details {
+  background: linear-gradient(to bottom, rgba(139, 90, 43, 0.9), rgba(107, 80, 63, 0.9)); /* Earthy gradient with brown tones */
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: background 0.3s;
+}
+
+  .hike-details:hover {
+  background: linear-gradient(to bottom, rgba(139, 90, 43, 1), rgba(107, 80, 63, 1)); /* Slightly brighter on hover */
+}
+
+  .hike-details p {
+  font-size: 1.2em;
+  color: #ffffff; /* Use white text for better contrast against the darker background */
+  margin: 5px 0;
+  line-height: 1.4;
+}
+/* About Section */
+  .about {
+    padding: 40px 0; /* Reduced padding from 60px to 40px */
+    margin-bottom: 20px; /* Reduced the bottom margin */
+  text-align: center;
+  background: none; /* Ensure there's no background causing darkness */
+  opacity: 1; /* Ensure there's no opacity affecting brightness */
+}
+  .about p {
+  font-size:1.8em;
+  }
+  .hike-details p, .urban-legends-list p {
+    font-size:1.8em;
+    color: #ffffff
+  }
+  
+  .about h2, #about-me {
+  margin-bottom: 30px;
+  font-size: 2.8em;
+  color: #FFA500; /* About section heading color */
+}
+  
+  /* Footer Styles */
+  footer {
+  background: #615f5b;
+  padding: 20px 0;
+  text-align: center;
+}
+  
+  footer p {
+  margin-bottom: 10px;
+}
+  .socials {
+  list-style: none;
+}
+
+  .socials li {
+  display: inline;
+  margin: 0 10px;
+}
+  
+  .socials a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+  
+  .socials a:hover {
+  color: #8b5a2b; /* Accent color on hover */
+}
+
+  .about-image {
+  max-width: 35%; /* Slightly smaller image */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Centering */
+  margin: 20px auto; /* Center with space above and below */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  filter: brightness(1.2) saturate:(1.3); /* Adjusts brightness (1 is default, higher is brighter) */
+}
+  
+  /* General Styling for the Section Theme */
+  .section-theme {
+  padding: 60px 0;
+  text-align: center;
+  background: none;
+  /* Brighten the image */
+  filter: brightness(1.2) saturate:(1.3);/* Adjusts brightness (1 is default, higher is brighter) */
+  }
+}
+  
+  .section-theme .container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+  /* Section header styling */
+  .section-header {
+  font-size: 2.8em;
+  color: #FFA500;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Shadow effect for better readability */
+}
+
+  
+  /* Survival Tips Section */
+  #survival-tips .container {
+  max-width: 1000px; /* Consistent width across sections */
+  margin: 0 auto;
+  background-color: #fff; /* Keep the white background for list items */
+  padding: 40px;
+  border-radius: 8px;
+}
+
+  
+  /* Remove light blue background and apply dark blue */
+  #survival-tips {
+  background-color: #4b6173; /* Dark blue background consistent with the website theme */
+  padding: 40px 0;
+  text-align: center;
+}
+
+  
+  /* Tips List styling */
+  .tips-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+  .tips-list li {
+  background: #fff;
+  padding: 20px
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Sets a minimum of 1rem, scaling with viewport width, with a max of 1.2rem */
+  line-height: 1.5; /* Maintain a good line height for readability */
+  color: #333333;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .tips-list li:hover {
+  transform: translateY(-5px);
+  background-color: #f0f8ff;
+  }
+  
+  .tips-list li::before {
+  content: '✔';
+  color: #FFA500;
+  margin-right: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+  .tips-list {
+  grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+  }
+  
+  /* History and Urban Legends List */
+  .history-list, .urban-legends-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 80%; /* Same max-width as Survival Tips */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+  
+      text-align: center;
+      background: none; /* Ensure there's no background causing darkness */
+      opacity: 1; /* Ensure there's no opacity affecting brightness */
+    }
+  
+  .history-list li:last-child, .urban-legends-list li:last-child {
+  border-bottom: none;
+  }
+  
+
+  /* History and Urban Legends Titles */
+  .history-list li h3, .urban-legends-list li h3 {
+    font-size: 1.4em;
+    color: #8b5a2b;
+    margin-bottom: 10px;
+  }
+  /* sizing for phones/tablets */
+  /* General font size reset for smaller screens */
+  @media (max-width: 1200px) {
+  header h1 {
+  font-size: 3em; /* Reduce header size for medium screens */
+  }
+  
+  .hero h2 {
+  font-size: 2em; /* Adjust hero title */
+  }
+  
+  .hero p {
+  font-size: 1.4em; /* Adjust hero text */
+  }
+  
+  
+  .location h3 {
+  font-size: 2em; /* Reduce size of location headings */
+  }
+  
+  .location p {
+  font-size: 1.3em; /* Adjust location descriptions */
+  }
+  
+  .hike-details p {
+  font-size: 1.1em; /* Adjust hike details text */
+  }
+  
+  .about h2 {
+  font-size: 2.2em; /* Adjust About section heading */
+  }
+  
+  .about p {
+  font-size: 1.2em; /* Adjust About section text */
+  }
+  .history-list p, .urban-legends-list p {
+    color: #ffffff;
+  font-size: 1.2em; /* Adjust About section text */
+  }
+  .about-image {
+    max-width: 85%; /* Make the image bigger for tablet */
+    }
+
+  }
+  
+  /* Tablet Screens */
+  @media (max-width: 768px) {
+  header h1 {
+  font-size: 2.5em; /* Further reduce header size */
+  }
+  .history-list p, .urban-legends-list p {
+    color: #ffffff;
+  font-size: 1.6em; /* Adjust About section text */
+  
+  .hero h2 {
+  font-size: 1.8em; /* Adjust hero title */
+  }
+  
+  .hero p {
+  font-size: 1.2em; /* Adjust hero text */
+  }
+  
+  .location h3 {
+  font-size: 1.8em; /* Adjust location headings */
+  }
+  
+  .location p {
+  font-size: 1.2em; /* Adjust location descriptions */
+  }
+  
+  .hike-details p {
+  font-size: 1em; /* Further reduce hike details text */
+  }
+  
+  .about h2 {
+  font-size: 2em; /* Adjust About section heading */
+  }
+  
+  
+  /* Adjust the image size in the About section */
+  .about-image {
+  max-width: 85%; /* Make the image bigger for tablet */
+  }
+  }
+  
+  /* Mobile Screens */
+  @media (max-width: 480px) {
+  header h1 {
+  font-size: 2em; /* Reduce header size for small screens */
+  }
+  
+  nav ul li {
+  display: block; /* Stack the nav links vertically */
+  margin: 10px 0; /* Add space between them */
+  }
+  
+  .hero h2 {
+  font-size: 1.5em; /* Adjust hero title */
+  }
+  
+  .hero p {
+  font-size: 1em; /* Adjust hero text */
+  }
+  .hero {
+    padding-bottom: 5px;
+  }
+  
+  .location h3 {
+  font-size: 1.6em; /* Adjust location headings */
+  }
+  
+  .location p {
+  font-size: 1.1em; /* Adjust location descriptions */
+  }
+  
+  .hike-details p {
+  font-size: 0.9em; /* Adjust hike details text */
+  }
+  
+  .about h2 {
+  font-size: 1.8em; /* Adjust About section heading */
+  }
+  
+  .about p {
+  font-size: clamp( 2.4em;, 1vw, 5em;);
+  /* 1.2em; /* Adjust About section text */
+  }
+  .history-list p, .urban-legends-list p {
+    color: #ffffff;
+    font-size: clamp( 2.4em;, 1vw, 5em;);
+    /* 1.2em; /* Adjust About section text */
+    }
+  
+  /* Adjust the image size in the About section */
+  .about-image {
+  max-width: 85%; /* Make the image full width for mobile */
+  }
+  
