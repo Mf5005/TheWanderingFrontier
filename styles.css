@@ -89,7 +89,7 @@
   background: rgba(0, 0, 0, 0.0);
   position: relative; /* Make it relative to the .hero section */
   z-index: 2; /* Set z-index higher than .hero:before */
-  max-width: 100%;
+  max-width: 
   /*height: 500px; */
   object-fit: cover;
   border-radius: 10px;
@@ -240,7 +240,7 @@
 }
 
   .about-image {
-  max-width: 35%; /* Slightly smaller image */
+  max-width: 75%; /* Slightly smaller image */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Centering */
   margin: 20px auto; /* Center with space above and below */
@@ -400,6 +400,7 @@
   }
   .about-image {
     max-width: 85%; /* Make the image bigger for tablet */
+    
     }
 
   }
