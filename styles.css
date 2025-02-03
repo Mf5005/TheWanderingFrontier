@@ -90,11 +90,9 @@
   position: relative; /* Make it relative to the .hero section */
   z-index: 2; /* Set z-index higher than .hero:before */
   max-width: 
-  /*height: 500px; */
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s;
-
 }
 
   .hero h2 {
@@ -500,3 +498,4 @@
  #challenge {
   font-size: 30px;
  }
+ 
