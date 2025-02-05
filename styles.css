@@ -498,4 +498,6 @@
  #challenge {
   font-size: 30px;
  }
- 
+ .travelmap {
+  max-width:50%;
+ }
